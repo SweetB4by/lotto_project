@@ -4,7 +4,7 @@ import { ResultSetHeader } from "mysql2";
 
 export const router = express.Router(); // สร้าง route
 
-// อัพเดต balance ของผู้ใช้
+// อัพเดต balance ยอดเงินของผู้ใช้
 router.put("/update-balance", (req, res) => { 
   const { userId, amount } = req.body; //ดึงข้อมูล userId และ amount จาก body ของ request
 
