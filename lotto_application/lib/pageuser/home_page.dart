@@ -35,7 +35,7 @@ class _HomePageState extends State<HomePage> {
       BuyLottoPage(
         userId: userId,
         onBalanceUpdated: // กำหนดฟังก์ชันให้ buy_lotto_page เรียกฟังก์ชัน onBalanceUpdated เมื่อ buy_lotto_page ซื้อหวยเสร็จ
-            fetchWalletAmount, //  จากนั้นรีเฟรชยอดเงิน
+            fetchWalletAmount, //  จากนั้นรีเฟรชยอดเงินผู้ใช้
       ), // ส่ง userId ไปที่ BuyLottoPage
       PurchasedPage(userId: userId),
       ResultPage(),

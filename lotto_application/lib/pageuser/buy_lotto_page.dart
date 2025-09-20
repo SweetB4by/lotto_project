@@ -5,7 +5,8 @@ import 'dart:convert';
 
 class BuyLottoPage extends StatefulWidget {
   final String userId; // รับ userId จาก HomePage
-  final VoidCallback? onBalanceUpdated; // ประกาศตัวแปรเก็บฟังก์ชันจาก home_page
+  final VoidCallback?
+  onBalanceUpdated; // ประกาศตัวแปรเก็บฟังก์ชันจากหน้า home_page
 
   const BuyLottoPage({
     super.key,
@@ -138,7 +139,7 @@ class _BuyLottoPageState extends State<BuyLottoPage> {
       if (response.statusCode == 200) {
         final data = json.decode(response.body);
         if (data['success']) {
-          // ตรวจสอบว่าฟังก์ชันนี้ไม่เป็น null ก่อน แล้วถึงเรียก onBalanceUpdated จาก home_page
+          // ตรวจสอบว่าฟังก์ชันนี้ไม่เป็น null ก่อน แล้วถึงเรียก onBalanceUpdated จากหน้า home_page
           widget.onBalanceUpdated?.call();
           // การหักเงินสำเร็จ
           ScaffoldMessenger.of(

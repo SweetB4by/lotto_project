@@ -8,7 +8,7 @@ export const router = express.Router(); // สร้าง route
 router.put("/update-balance", (req, res) => { 
   const { userId, amount } = req.body; //ดึงข้อมูล userId และ amount จาก body ของ request
 
-  if (!userId || !amount) { // ตรวจสอบว่า ส่งข้อมูลครบไหม
+  if (!userId || !amount) { // ตรวจสอบว่าส่งข้อมูลครบไหม
     return res.status(400).json({ success: false, message: "ข้อมูลไม่ครบ" });
   }
 

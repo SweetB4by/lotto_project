@@ -4,7 +4,7 @@ import { router as register } from "./controller/register";
 import { router as lotto } from "./controller/lotto";  // เพิ่มบรรทัดนี้
 
 
-import { router as balance} from "./controller/balance"; // ตั้งชื่อเป็น
+import { router as balance} from "./controller/balance"; // ตั้งชื่อเป็น balance
 
 
 import bodyParser from "body-parser";
